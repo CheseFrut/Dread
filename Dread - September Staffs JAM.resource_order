@@ -11,8 +11,9 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_double_homicide","order":1,"path":"fonts/fnt_double_homicide/fnt_double_homicide.yy",},
+    {"name":"snd_gameplay_ambiance","order":1,"path":"sounds/snd_gameplay_ambiance/snd_gameplay_ambiance.yy",},
     {"name":"spr_arcing_attack_small","order":10,"path":"sprites/spr_arcing_attack_small/spr_arcing_attack_small.yy",},
-    {"name":"spr_button_green","order":5,"path":"sprites/spr_button_green/spr_button_green.yy",},
+    {"name":"spr_button_green","order":28,"path":"sprites/spr_button_green/spr_button_green.yy",},
     {"name":"spr_button_grey","order":18,"path":"sprites/spr_button_grey/spr_button_grey.yy",},
     {"name":"spr_button_pause","order":24,"path":"sprites/spr_button_pause/spr_button_pause.yy",},
     {"name":"spr_button_small","order":12,"path":"sprites/spr_button_small/spr_button_small.yy",},

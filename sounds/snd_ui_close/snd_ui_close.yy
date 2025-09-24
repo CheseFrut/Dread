@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.116437,
+  "duration":0.11643991,
   "name":"snd_ui_close",
   "parent":{
     "name":"UI",

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shadow",
-    "path":"sprites/spr_shadow/spr_shadow.yy",
+    "name":"Vinnett",
+    "path":"sprites/Vinnett/Vinnett.yy",
   },
   "spriteMaskId":null,
   "visible":true,

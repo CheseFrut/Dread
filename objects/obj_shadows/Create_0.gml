@@ -15,3 +15,15 @@ owner_object = noone;
 /// @DnDArgument : "var_1" "shadow_offset_y"
 shadow_offset_x = 0;
 shadow_offset_y = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6FC498F6
+/// @DnDComment : // Variables used for shadow offset.
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "15"
+/// @DnDArgument : "expr_1" "15"
+/// @DnDArgument : "var" "image_xscale"
+/// @DnDArgument : "var_1" "image_yscale"
+image_xscale = 15;
+image_yscale = 15;

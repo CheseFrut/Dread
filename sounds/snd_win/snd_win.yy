@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":4.875,
+  "duration":0.2895465,
   "name":"snd_win",
   "parent":{
     "name":"Jingles",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_win.ogg",
+  "soundFile":"snd_win.wav",
   "type":0,
   "volume":1.0,
 }
