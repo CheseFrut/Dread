@@ -41,6 +41,18 @@ hero_shoot_cooldown = 30;
 hero_swipe_cooldown = 30;
 hero_trail_cooldown = 30;
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6CAD5DBE
+/// @DnDComment : // Variables used for shadow offset.
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "8"
+/// @DnDArgument : "expr_1" "8"
+/// @DnDArgument : "var" "image_xscale"
+/// @DnDArgument : "var_1" "image_yscale"
+image_xscale = 8;
+image_yscale = 8;
+
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 5338D1C4

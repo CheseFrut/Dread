@@ -5,7 +5,9 @@
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "-40"
 /// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "xscale" "8"
+/// @DnDArgument : "yscale" "8"
 /// @DnDArgument : "rot" "image_angle"
 /// @DnDArgument : "sprite" "sprite_index"
 /// @DnDArgument : "frame" "image_index"
-draw_sprite_ext(sprite_index, image_index, x + 0, y + -40, 1, 1, image_angle, $FFFFFF & $ffffff, 1);
+draw_sprite_ext(sprite_index, image_index, x + 0, y + -40, 8, 8, image_angle, $FFFFFF & $ffffff, 1);

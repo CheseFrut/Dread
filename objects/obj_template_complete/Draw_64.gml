@@ -58,8 +58,8 @@ draw_set_valign(fa_middle);
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "-10"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""WELL DONE""
-draw_text(x + 0, y + -10, string("WELL DONE") + "");
+/// @DnDArgument : "caption" ""You have conquered the ancient giants.""
+draw_text(x + 0, y + -10, string("You have conquered the ancient giants.") + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
@@ -76,8 +76,8 @@ draw_set_font(fnt_small_medium);
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "30"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""You have completed the template!""
-draw_text(x + 0, y + 30, string("You have completed the template!") + "");
+/// @DnDArgument : "caption" ""Thank you for playing!""
+draw_text(x + 0, y + 30, string("Thank you for playing!") + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1

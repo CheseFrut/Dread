@@ -21,9 +21,9 @@ shadow_offset_y = 0;
 /// @DnDHash : 6FC498F6
 /// @DnDComment : // Variables used for shadow offset.
 /// @DnDInput : 2
-/// @DnDArgument : "expr" "15"
-/// @DnDArgument : "expr_1" "15"
+/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_1" "1"
 /// @DnDArgument : "var" "image_xscale"
 /// @DnDArgument : "var_1" "image_yscale"
-image_xscale = 15;
-image_yscale = 15;
+image_xscale = 1;
+image_yscale = 1;
