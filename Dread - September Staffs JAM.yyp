@@ -61,6 +61,7 @@
   "resources":[
     {"id":{"name":"fnt_card_description","path":"fonts/fnt_card_description/fnt_card_description.yy",},},
     {"id":{"name":"fnt_card_name","path":"fonts/fnt_card_name/fnt_card_name.yy",},},
+    {"id":{"name":"fnt_double_homicide","path":"fonts/fnt_double_homicide/fnt_double_homicide.yy",},},
     {"id":{"name":"fnt_large","path":"fonts/fnt_large/fnt_large.yy",},},
     {"id":{"name":"fnt_medium","path":"fonts/fnt_medium/fnt_medium.yy",},},
     {"id":{"name":"fnt_small_medium","path":"fonts/fnt_small_medium/fnt_small_medium.yy",},},
@@ -178,6 +179,7 @@
     {"id":{"name":"spr_well_done_banner","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},},
     {"id":{"name":"spr_xpbar_back","path":"sprites/spr_xpbar_back/spr_xpbar_back.yy",},},
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
+    {"id":{"name":"Vinnett","path":"sprites/Vinnett/Vinnett.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

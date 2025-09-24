@@ -3,15 +3,12 @@
 /// @DnDHash : 565A358A
 /// @DnDComment : // If the game is paused...
 /// @DnDArgument : "expr" "global.paused"
-if(global.paused)
-{
-	/// @DnDAction : YoYo Games.Common.Exit_Event
+if(global.paused){	/// @DnDAction : YoYo Games.Common.Exit_Event
 	/// @DnDVersion : 1
 	/// @DnDHash : 5BA6C54A
 	/// @DnDComment : // Exit this event while paused.
 	/// @DnDParent : 565A358A
-	exit;
-}
+	exit;}
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
@@ -52,17 +49,14 @@ nearest_distance = 1000;
 /// @DnDHash : 29BAE14F
 /// @DnDComment : // If an enemy instance is found.
 /// @DnDArgument : "expr" "nearest_enemy"
-if(nearest_enemy)
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+if(nearest_enemy){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3F5E8FFC
 	/// @DnDComment : // Get the distance to that enemy.
 	/// @DnDParent : 29BAE14F
 	/// @DnDArgument : "expr" "point_distance(x, y, nearest_enemy.x, nearest_enemy.y)"
 	/// @DnDArgument : "var" "nearest_distance"
-	nearest_distance = point_distance(x, y, nearest_enemy.x, nearest_enemy.y);
-}
+	nearest_distance = point_distance(x, y, nearest_enemy.x, nearest_enemy.y);}
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -88,16 +82,13 @@ hero_trail_cooldown += -1;
 /// @DnDComment : // Check if function cooldown is finished.
 /// @DnDArgument : "var" "hero_shoot_cooldown"
 /// @DnDArgument : "op" "3"
-if(hero_shoot_cooldown <= 0)
-{
-	/// @DnDAction : YoYo Games.Common.Function_Call
+if(hero_shoot_cooldown <= 0){	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 4F966227
 	/// @DnDComment : // Call function.
 	/// @DnDParent : 38B830B3
 	/// @DnDArgument : "function" "hero_shoot"
-	hero_shoot();
-}
+	hero_shoot();}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -105,16 +96,13 @@ if(hero_shoot_cooldown <= 0)
 /// @DnDComment : // Check if function cooldown is finished.
 /// @DnDArgument : "var" "hero_swipe_cooldown"
 /// @DnDArgument : "op" "3"
-if(hero_swipe_cooldown <= 0)
-{
-	/// @DnDAction : YoYo Games.Common.Function_Call
+if(hero_swipe_cooldown <= 0){	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 5079F9C7
 	/// @DnDComment : // Call function.
 	/// @DnDParent : 71B257C5
 	/// @DnDArgument : "function" "hero_swipe"
-	hero_swipe();
-}
+	hero_swipe();}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -122,13 +110,10 @@ if(hero_swipe_cooldown <= 0)
 /// @DnDComment : // Check if function cooldown is finished.
 /// @DnDArgument : "var" "hero_trail_cooldown"
 /// @DnDArgument : "op" "3"
-if(hero_trail_cooldown <= 0)
-{
-	/// @DnDAction : YoYo Games.Common.Function_Call
+if(hero_trail_cooldown <= 0){	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 0FA3125A
 	/// @DnDComment : // Call function.
 	/// @DnDParent : 45938D75
 	/// @DnDArgument : "function" "hero_trail"
-	hero_trail();
-}
+	hero_trail();}
