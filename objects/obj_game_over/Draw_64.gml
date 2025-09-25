@@ -2,9 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 550D17CB
 /// @DnDComment : // Set color.$(13_10)// This will be a semi-transparent black.
-/// @DnDArgument : "color" "$81000000"
-draw_set_colour($81000000 & $ffffff);
-var l550D17CB_0=($81000000 >> 24);
+/// @DnDArgument : "color" "$FF000000"
+draw_set_colour($FF000000 & $ffffff);
+var l550D17CB_0=($FF000000 >> 24);
 draw_set_alpha(l550D17CB_0 / $ff);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
@@ -24,15 +24,16 @@ draw_set_colour($FFFFFFFF & $ffffff);
 var l7829E102_0=($FFFFFFFF >> 24);
 draw_set_alpha(l7829E102_0 / $ff);
 
-/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+/// @DnDAction : YoYo Games.Drawing.Draw_Sprite_Transformed
 /// @DnDVersion : 1
-/// @DnDHash : 18165491
-/// @DnDComment : // Draw game over banner.
-/// @DnDArgument : "x" "1920 / 2"
-/// @DnDArgument : "y" "1080 / 2 "
+/// @DnDHash : 15DB29C7
+/// @DnDArgument : "x" "1920/2"
+/// @DnDArgument : "y" "1080/2"
+/// @DnDArgument : "xscale" "8"
+/// @DnDArgument : "yscale" "8"
 /// @DnDArgument : "sprite" "spr_game_over_banner"
 /// @DnDSaveInfo : "sprite" "spr_game_over_banner"
-draw_sprite(spr_game_over_banner, 0, 1920 / 2, 1080 / 2 );
+draw_sprite_ext(spr_game_over_banner, 0, 1920/2, 1080/2, 8, 8, 0, $FFFFFF & $ffffff, 1);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1

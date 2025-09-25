@@ -1,7 +1,7 @@
 {
   "$GMFont":"",
   "%Name":"fnt_double_homicide",
-  "AntiAlias":1,
+  "AntiAlias":0,
   "applyKerning":0,
   "ascender":14,
   "ascenderOffset":0,
@@ -183,10 +183,7 @@
   "sdfSpread":8,
   "size":10.0,
   "styleName":"Regular",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":null,
   "usesSDF":true,
 }

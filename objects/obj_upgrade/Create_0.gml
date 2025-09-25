@@ -48,3 +48,15 @@ gamepad_bypass = false;
 /// @DnDArgument : "var_1" "roll_alpha"
 roll_life = 0;
 roll_alpha = 1;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7E218A6B
+/// @DnDComment : // Variables used for hide reveal on upgrades.
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "2"
+/// @DnDArgument : "expr_1" "2"
+/// @DnDArgument : "var" "image_xscale"
+/// @DnDArgument : "var_1" "image_yscale"
+image_xscale = 2;
+image_yscale = 2;

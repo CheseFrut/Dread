@@ -15,8 +15,8 @@
   "name":"obj_hero",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hero and Weapons",
-    "path":"folders/Objects/Game/Hero and Weapons.yy",
+    "name":"Game Over",
+    "path":"folders/Objects/Game/Game Over.yy",
   },
   "parentObjectId":null,
   "persistent":false,

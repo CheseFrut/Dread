@@ -3,9 +3,7 @@
 /// @DnDHash : 65A75D93
 /// @DnDComment : // Checks if glow highlight should show.
 /// @DnDArgument : "expr" "mouse_over"
-if(mouse_over)
-{
-	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+if(mouse_over){	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 	/// @DnDVersion : 1
 	/// @DnDHash : 4F4CDA04
 	/// @DnDComment : // Draws the glow highlight.
@@ -14,8 +12,7 @@ if(mouse_over)
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "sprite" "spr_card_glow"
 	/// @DnDSaveInfo : "sprite" "spr_card_glow"
-	draw_sprite(spr_card_glow, 0, x + 0, y + 0);
-}
+	draw_sprite(spr_card_glow, 0, x + 0, y + 0);}
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Self
 /// @DnDVersion : 1
@@ -28,15 +25,12 @@ draw_self();
 /// @DnDHash : 28687F9D
 /// @DnDComment : // Checks if the upgrade has been set.
 /// @DnDArgument : "var" "upgrade_data"
-if(upgrade_data == undefined)
-{
-	/// @DnDAction : YoYo Games.Common.Exit_Event
+if(upgrade_data == undefined){	/// @DnDAction : YoYo Games.Common.Exit_Event
 	/// @DnDVersion : 1
 	/// @DnDHash : 03F0DC73
 	/// @DnDComment : // Exits the event.
 	/// @DnDParent : 28687F9D
-	exit;
-}
+	exit;}
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
@@ -69,10 +63,10 @@ draw_set_alpha(l56AF297D_0 / $ff);
 /// @DnDHash : 42B33F98
 /// @DnDComment : // Draw the upgrade text.
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "185"
+/// @DnDArgument : "y" "-210"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" "upgrade_data[? "title"]"
-draw_text(x + 0, y + 185, string(upgrade_data[? "title"]) + "");
+draw_text(x + 0, y + -210, string(upgrade_data[? "title"]) + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
@@ -95,10 +89,10 @@ draw_set_font(fnt_card_name);
 /// @DnDHash : 178510E6
 /// @DnDComment : // Draw the upgrade text.
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "-50"
+/// @DnDArgument : "y" "-190"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" "upgrade_data[? "weapon_name"]"
-draw_text(x + 0, y + -50, string(upgrade_data[? "weapon_name"]) + "");
+draw_text(x + 0, y + -190, string(upgrade_data[? "weapon_name"]) + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
@@ -113,20 +107,21 @@ draw_set_font(fnt_card_description);
 /// @DnDHash : 6045EB6F
 /// @DnDComment : // Draw the upgrade text.
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "+40"
+/// @DnDArgument : "y" "+20"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" "upgrade_data[? "description"]"
-draw_text(x + 0, y + +40, string(upgrade_data[? "description"]) + "");
+draw_text(x + 0, y + +20, string(upgrade_data[? "description"]) + "");
 
-/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+/// @DnDAction : YoYo Games.Drawing.Draw_Sprite_Transformed
 /// @DnDVersion : 1
-/// @DnDHash : 763A2A41
-/// @DnDComment : // Draw the upgrade icon.
+/// @DnDHash : 37926CD2
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "-200"
+/// @DnDArgument : "y" "-100"
 /// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "xscale" "3"
+/// @DnDArgument : "yscale" "3"
 /// @DnDArgument : "sprite" "upgrade_data[? "icon"]"
-draw_sprite(upgrade_data[? "icon"], 0, x + 0, y + -200);
+draw_sprite_ext(upgrade_data[? "icon"], 0, x + 0, y + -100, 3, 3, 0, $FFFFFF & $ffffff, 1);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alpha
 /// @DnDVersion : 1
