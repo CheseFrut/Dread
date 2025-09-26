@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pumpkill_walk",
-    "path":"sprites/spr_pumpkill_walk/spr_pumpkill_walk.yy",
+    "name":"spr_spider_attack",
+    "path":"sprites/spr_spider_attack/spr_spider_attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

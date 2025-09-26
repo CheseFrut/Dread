@@ -25,12 +25,12 @@ image_speed = 1;
 /// @DnDHash : 588928BF
 /// @DnDComment : // Set sprites for this enemy type.
 /// @DnDInput : 3
-/// @DnDArgument : "expr" "spr_rooster_walk"
-/// @DnDArgument : "expr_1" "spr_rooster_attack"
-/// @DnDArgument : "expr_2" "spr_rooster_hit"
+/// @DnDArgument : "expr" "spr_woman_walk"
+/// @DnDArgument : "expr_1" "spr_woman_attack"
+/// @DnDArgument : "expr_2" "spr_woman_hit"
 /// @DnDArgument : "var" "walk_sprite"
 /// @DnDArgument : "var_1" "attack_sprite"
 /// @DnDArgument : "var_2" "hit_sprite"
-walk_sprite = spr_rooster_walk;
-attack_sprite = spr_rooster_attack;
-hit_sprite = spr_rooster_hit;
+walk_sprite = spr_woman_walk;
+attack_sprite = spr_woman_attack;
+hit_sprite = spr_woman_hit;

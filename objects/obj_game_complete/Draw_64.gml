@@ -2,9 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 550D17CB
 /// @DnDComment : // Set color.$(13_10)// This will be a semi-transparent black.
-/// @DnDArgument : "color" "$81000000"
-draw_set_colour($81000000 & $ffffff);
-var l550D17CB_0=($81000000 >> 24);
+/// @DnDArgument : "color" "$FF000000"
+draw_set_colour($FF000000 & $ffffff);
+var l550D17CB_0=($FF000000 >> 24);
 draw_set_alpha(l550D17CB_0 / $ff);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
@@ -34,70 +34,12 @@ draw_set_alpha(l7829E102_0 / $ff);
 /// @DnDSaveInfo : "sprite" "spr_well_done_banner"
 draw_sprite(spr_well_done_banner, 0, x + 0, y + 0);
 
-/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
-/// @DnDHash : 147E2048
-/// @DnDComment : // Set font.
-/// @DnDArgument : "font" "fnt_large"
-/// @DnDSaveInfo : "font" "fnt_large"
-draw_set_font(fnt_large);
-
-/// @DnDAction : YoYo Games.Drawing.Set_Alignment
-/// @DnDVersion : 1.1
-/// @DnDHash : 6B8B3064
-/// @DnDComment : // Align drawn text horizontally and vertically.
-/// @DnDArgument : "halign" "fa_center"
-/// @DnDArgument : "valign" "fa_middle"
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
-/// @DnDVersion : 1
-/// @DnDHash : 24A43BC5
-/// @DnDComment : // Draw game over text.
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "-10"
-/// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""You have conquered the ancient giants.""
-draw_text(x + 0, y + -10, string("You have conquered the ancient giants.") + "");
-
-/// @DnDAction : YoYo Games.Drawing.Set_Font
-/// @DnDVersion : 1
-/// @DnDHash : 295B9FB2
-/// @DnDComment : // Set font.
-/// @DnDArgument : "font" "fnt_small_medium"
-/// @DnDSaveInfo : "font" "fnt_small_medium"
-draw_set_font(fnt_small_medium);
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
-/// @DnDVersion : 1
-/// @DnDHash : 693B87C0
-/// @DnDComment : // Draw game over text.
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "30"
-/// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""Thank you for playing!""
-draw_text(x + 0, y + 30, string("Thank you for playing!") + "");
-
-/// @DnDAction : YoYo Games.Drawing.Set_Font
-/// @DnDVersion : 1
-/// @DnDHash : 5EDAE46F
-/// @DnDComment : // Set font.
-/// @DnDArgument : "font" "fnt_large"
-/// @DnDSaveInfo : "font" "fnt_large"
-draw_set_font(fnt_large);
-
-/// @DnDAction : YoYo Games.Drawing.Set_Alignment
-/// @DnDVersion : 1.1
-/// @DnDHash : 6155B8FA
-/// @DnDComment : // Reset text alignments.
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-
-/// @DnDAction : YoYo Games.Drawing.Set_Color
-/// @DnDVersion : 1
-/// @DnDHash : 4C0DB8EB
-/// @DnDComment : // Reset color to opaque white.
-draw_set_colour($FFFFFFFF & $ffffff);
-var l4C0DB8EB_0=($FFFFFFFF >> 24);
-draw_set_alpha(l4C0DB8EB_0 / $ff);
+/// @DnDHash : 33B0A1C4
+/// @DnDArgument : "xpos" "1920/2"
+/// @DnDArgument : "ypos" "1080 - 300"
+/// @DnDArgument : "objectid" "obj_button_exit"
+/// @DnDArgument : "layer" ""UpgradeScreen""
+/// @DnDSaveInfo : "objectid" "obj_button_exit"
+instance_create_layer(1920/2, 1080 - 300, "UpgradeScreen", obj_button_exit);

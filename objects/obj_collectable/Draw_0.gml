@@ -5,9 +5,7 @@
 /// @DnDArgument : "var" "global.paused"
 /// @DnDArgument : "not" "1"
 /// @DnDArgument : "value" "true"
-if(!(global.paused == true))
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+if(!(global.paused == true)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 309C7FAA
 	/// @DnDComment : // Add to the timer to make the float effect
@@ -15,15 +13,14 @@ if(!(global.paused == true))
 	/// @DnDArgument : "expr" "delta_time * 0.000001 * 10"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "float_timer"
-	float_timer += delta_time * 0.000001 * 10;
-}
+	float_timer += delta_time * 0.000001 * 10;}
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 /// @DnDVersion : 1
 /// @DnDHash : 4D7FA550
 /// @DnDComment : // Draw the sprite at the appropriate height
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "sin(float_timer) * 10"
+/// @DnDArgument : "y" "sin(float_timer) * 8"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "sprite" "sprite_index"
-draw_sprite(sprite_index, 0, x + 0, y + sin(float_timer) * 10);
+draw_sprite(sprite_index, 0, x + 0, y + sin(float_timer) * 8);

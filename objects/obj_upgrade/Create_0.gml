@@ -60,3 +60,13 @@ roll_alpha = 1;
 /// @DnDArgument : "var_1" "image_yscale"
 image_xscale = 2;
 image_yscale = 2;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 0C0A96B7
+/// @DnDComment : // Global variable for if mouse is used.
+/// @DnDInput : 2
+/// @DnDArgument : "var" "image_speed"
+/// @DnDArgument : "var_1" "image_index"
+image_speed = 0;
+image_index = 0;

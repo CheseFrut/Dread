@@ -4,9 +4,7 @@
 /// @DnDComment : // If the hero is NOT currently being hit...
 /// @DnDArgument : "expr" "sprite_index == spr_hero_hit"
 /// @DnDArgument : "not" "1"
-if(!(sprite_index == spr_hero_hit))
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+if(!(sprite_index == spr_hero_hit)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 7C049B28
 	/// @DnDComment : // Reduce hitpoints.
@@ -70,17 +68,13 @@ if(!(sprite_index == spr_hero_hit))
 		/// @DnDHash : 212FAAD3
 		/// @DnDComment : // Check if enemy is walking pigun.
 		/// @DnDParent : 066A39DE
-		/// @DnDArgument : "expr" "sprite_index == spr_pigun_walk"
-		if(sprite_index == spr_pigun_walk)
-		{
-			/// @DnDAction : YoYo Games.Instances.Set_Sprite
+		/// @DnDArgument : "expr" "sprite_index == spr_woman_walk"
+		if(sprite_index == spr_woman_walk){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
 			/// @DnDVersion : 1
 			/// @DnDHash : 20085615
 			/// @DnDComment : // Change to attack sprite.$(13_10)// Reset image index.
 			/// @DnDParent : 212FAAD3
 			/// @DnDArgument : "spriteind" "attack_sprite"
 			sprite_index = attack_sprite;
-			image_index = 0;
-		}
-	}
-}
+			image_index = 0;}
+	}}

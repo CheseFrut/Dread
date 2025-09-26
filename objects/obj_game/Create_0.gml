@@ -63,6 +63,12 @@ global.enemy_spawn_speed = 60;
 /// @DnDArgument : "var" "enemy_health_bonus"
 global.enemy_health_bonus = 1;
 
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 4D7174EC
+/// @DnDArgument : "var" "number_of_bears"
+global.number_of_bears = 0;
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 673B962C
@@ -163,27 +169,63 @@ function spawn_enemy() {	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDInput : 2
 		/// @DnDParent : 7985862A
 		/// @DnDArgument : "var" "_enemy"
-		/// @DnDArgument : "option" "obj_pigun"
+		/// @DnDArgument : "option" "obj_rooster"
 		/// @DnDArgument : "option_1" "obj_pumpkill"
-		_enemy = choose(obj_pigun, obj_pumpkill);}
+		_enemy = choose(obj_rooster, obj_pumpkill);}
 
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 7F296995
 	/// @DnDComment : // If we are over level 4...
 	/// @DnDParent : 03928273
-	/// @DnDArgument : "expr" "global.level > 4"
-	if(global.level > 4){	/// @DnDAction : YoYo Games.Random.Choose
+	/// @DnDArgument : "expr" "global.level == 10"
+	if(global.level == 10){	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 2353686B
-		/// @DnDComment : // Change the enemy type to either$(13_10)// pigun, pumpkill or rooster.
-		/// @DnDInput : 3
+		/// @DnDHash : 5437070F
 		/// @DnDParent : 7F296995
-		/// @DnDArgument : "var" "_enemy"
-		/// @DnDArgument : "option" "obj_pigun"
-		/// @DnDArgument : "option_1" "obj_pumpkill"
-		/// @DnDArgument : "option_2" "obj_rooster"
-		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);}
+		/// @DnDArgument : "var" "global.number_of_bears"
+		/// @DnDArgument : "op" "1"
+		/// @DnDArgument : "value" "1"
+		if(global.number_of_bears < 1){	/// @DnDAction : YoYo Games.Random.Choose
+			/// @DnDVersion : 1
+			/// @DnDHash : 2353686B
+			/// @DnDComment : // Change the enemy type to either$(13_10)// pigun, pumpkill or rooster.
+			/// @DnDInput : 3
+			/// @DnDParent : 5437070F
+			/// @DnDArgument : "var" "_enemy"
+			/// @DnDArgument : "option" "obj_rooster"
+			/// @DnDArgument : "option_1" "obj_pumpkill"
+			/// @DnDArgument : "option_2" "obj_bear"
+			_enemy = choose(obj_rooster, obj_pumpkill, obj_bear);}
+	
+		/// @DnDAction : YoYo Games.Common.Else
+		/// @DnDVersion : 1
+		/// @DnDHash : 290A2416
+		/// @DnDParent : 7F296995
+		else{	/// @DnDAction : YoYo Games.Random.Choose
+			/// @DnDVersion : 1
+			/// @DnDHash : 0CF73624
+			/// @DnDComment : // Change the enemy type to either$(13_10)// pigun, pumpkill or rooster.
+			/// @DnDInput : 2
+			/// @DnDParent : 290A2416
+			/// @DnDArgument : "var" "_enemy"
+			/// @DnDArgument : "option" "obj_rooster"
+			/// @DnDArgument : "option_1" "obj_pumpkill"
+			_enemy = choose(obj_rooster, obj_pumpkill);}}
+
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 7451AAD2
+	/// @DnDParent : 03928273
+	/// @DnDArgument : "var" "_enemy"
+	/// @DnDArgument : "value" "obj_bear"
+	if(_enemy == obj_bear){	/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 718A064C
+		/// @DnDParent : 7451AAD2
+		/// @DnDArgument : "expr" "global.number_of_bears + 1"
+		/// @DnDArgument : "var" "global.number_of_bears"
+		global.number_of_bears = global.number_of_bears + 1;}
 
 	/// @DnDAction : YoYo Games.Common.Temp_Variable
 	/// @DnDVersion : 1

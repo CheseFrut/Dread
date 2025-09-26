@@ -3,9 +3,7 @@
 /// @DnDHash : 7C795615
 /// @DnDComment : // Declare a function that retrieves all possible upgrades$(13_10)// and creates upgrade card objects for 3 of them.
 /// @DnDArgument : "funcName" "get_upgrades"
-function get_upgrades() 
-{
-	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+function get_upgrades() {	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 017ACDF5
 	/// @DnDComment : // Destroy any existing upgrade cards.
@@ -86,8 +84,7 @@ function get_upgrades()
 	/// @DnDArgument : "init_temp" "1"
 	/// @DnDArgument : "cond" "_index < min(_size, 3)"
 	/// @DnDArgument : "expr" "_index += 1"
-	for(var _index = 0; _index < min(_size, 3); _index += 1) {
-		/// @DnDAction : YoYo Games.Data Structures.List_Get_At
+	for(var _index = 0; _index < min(_size, 3); _index += 1) {	/// @DnDAction : YoYo Games.Data Structures.List_Get_At
 		/// @DnDVersion : 1
 		/// @DnDHash : 13D5D950
 		/// @DnDComment : // Get the upgrade at the current index.
@@ -103,13 +100,14 @@ function get_upgrades()
 		/// @DnDComment : // Create a new upgrade card object.
 		/// @DnDParent : 14382F38
 		/// @DnDArgument : "xpos" "1920 / 2 + _x"
+		/// @DnDArgument : "xpos_relative" "1"
 		/// @DnDArgument : "ypos" "1080 / 2"
 		/// @DnDArgument : "var" "_upgrade"
 		/// @DnDArgument : "var_temp" "1"
 		/// @DnDArgument : "objectid" "obj_upgrade"
 		/// @DnDArgument : "layer" ""UpgradeScreen""
 		/// @DnDSaveInfo : "objectid" "obj_upgrade"
-		var _upgrade = instance_create_layer(1920 / 2 + _x, 1080 / 2, "UpgradeScreen", obj_upgrade);
+		var _upgrade = instance_create_layer(x + 1920 / 2 + _x, 1080 / 2, "UpgradeScreen", obj_upgrade);
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -137,6 +135,4 @@ function get_upgrades()
 		/// @DnDArgument : "expr" "400"
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "_x"
-		_x += 400;
-	}
-}
+		_x += 400;}}

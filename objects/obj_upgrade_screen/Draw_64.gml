@@ -1,13 +1,3 @@
-/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
-/// @DnDVersion : 1
-/// @DnDHash : 13EA9A84
-/// @DnDComment : // Draws the upgrade background.
-/// @DnDArgument : "x" "1920 / 2"
-/// @DnDArgument : "y" "1080 / 2"
-/// @DnDArgument : "sprite" "spr_ui_home_screen"
-/// @DnDSaveInfo : "sprite" "spr_ui_home_screen"
-draw_sprite(spr_ui_home_screen, 0, 1920 / 2, 1080 / 2);
-
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
 /// @DnDHash : 369B8B24

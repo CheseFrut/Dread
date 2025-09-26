@@ -41,12 +41,12 @@ hitpoints = hitpoints_max;
 /// @DnDHash : 588928BF
 /// @DnDComment : // Set sprites for this enemy type.
 /// @DnDInput : 3
-/// @DnDArgument : "expr" "spr_pumpkill_walk"
-/// @DnDArgument : "expr_1" "spr_pumpkill_attack"
-/// @DnDArgument : "expr_2" "spr_pumpkill_hit"
+/// @DnDArgument : "expr" "spr_spider_walk"
+/// @DnDArgument : "expr_1" "spr_spider_attack"
+/// @DnDArgument : "expr_2" "spr_spider_hit"
 /// @DnDArgument : "var" "walk_sprite"
 /// @DnDArgument : "var_1" "attack_sprite"
 /// @DnDArgument : "var_2" "hit_sprite"
-walk_sprite = spr_pumpkill_walk;
-attack_sprite = spr_pumpkill_attack;
-hit_sprite = spr_pumpkill_hit;
+walk_sprite = spr_spider_walk;
+attack_sprite = spr_spider_attack;
+hit_sprite = spr_spider_hit;

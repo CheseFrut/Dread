@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collectible_gen",
-    "path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",
+    "name":"spr_collectible_gem",
+    "path":"sprites/spr_collectible_gem/spr_collectible_gem.yy",
   },
   "spriteMaskId":null,
   "visible":true,

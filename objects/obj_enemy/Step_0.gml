@@ -19,14 +19,11 @@ direction = point_direction(x, y, obj_hero.x, obj_hero.y);
 /// @DnDHash : 72C46D59
 /// @DnDComment : // If horizontal speed is NOT 0.
 /// @DnDArgument : "expr" "hspeed != 0"
-if(hspeed != 0)
-{
-	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
+if(hspeed != 0){	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 	/// @DnDVersion : 1
 	/// @DnDHash : 38D25C64
 	/// @DnDComment : // Set our xscale to the sign of hspeed$(13_10)// (can only be -1 or 1 at this point).
 	/// @DnDParent : 72C46D59
-	/// @DnDArgument : "xscale" "sign(hspeed)"
-	image_xscale = sign(hspeed);
-	image_yscale = 1;
-}
+	/// @DnDArgument : "xscale" "sign(hspeed) * 8"
+	/// @DnDArgument : "yscale" "8"
+	image_xscale = sign(hspeed) * 8;image_yscale = 8;}
